@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 import telegram
 import datetime
 import pytz
-import asyncio
 
 bot_token = '6105606954:AAFN3Wv6V1wljInQSvt_ZppIvPk7tmXiFqw'
 async def on_ready():
