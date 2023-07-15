@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.25)
+project(practice2sem)
+
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++")
+
+add_executable(practice2sem 4.cpp Matrix.cpp Matrix.h TVector.cpp TVector.h)
+
+set_target_properties(practice2sem PROPERTIES LINK_FLAGS "-static")
