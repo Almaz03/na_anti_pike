@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.25)
+project(practice2sem)
+
+
+include_directories("C:\\Users\\akbar\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\231.9161.40\\bin\\c\\src")
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++")
+
+add_executable(practice2sem 6.cpp)
+
+set_target_properties(practice2sem PROPERTIES LINK_FLAGS "-static")
